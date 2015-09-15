@@ -1,0 +1,26 @@
+<div class="container" ng-controller="Movies">
+	<h1>Find Movie</h1>
+	<form action="">
+		<div class="input-group">
+			<input class="form-control" type="text" ng-model="newMovie.title" placeholder="Title">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" ng-click="getMovie()">Search</button>
+			</span>
+		</div>
+		<input class="form-control" type="text" ng-model="newMovie.actors" placeholder="Actors">
+		<input class="form-control" type="text" ng-model="newMovie.release_date" placeholder="Release Date">
+		<input class="form-control" type="text" ng-model="newMovie.rated" placeholder="Rated">
+		<input class="form-control" type="text" ng-model="newMovie.runtime" placeholder="Run Time">
+		<input class="form-control" type="text" ng-model="newMovie.imdb_rating" placeholder="IMBD Rating">
+		<input class="form-control" type="text" ng-model="newMovie.production_company" placeholder="Production Company">
+		<input class="form-control" type="text" ng-model="newMovie.metascore_rating" placeholder="Metascore Rating">
+		<input class="form-control" type="text" ng-model="newMovie.rt_rating" placeholder="RT Rating">
+		<input class="form-control" type="text" ng-model="newMovie.rt_overall" placeholder="RT Overall">
+		<input class="form-control" type="text" ng-model="newMovie.rt_consensus" placeholder="RT Consensus">
+		<input class="form-control" type="text" ng-model="newMovie.rt_fresh" placeholder="RT Fresh Reviews">
+		<input class="form-control" type="text" ng-model="newMovie.rt_rotten" placeholder="RT Rotten Reviews">
+		<input class="form-control" type="text" ng-model="newMovie.synopsis" placeholder="Synopsis">
+		<textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Full movie summary..." ng-model="newMovie.plot"></textarea>
+		<button class="btn btn-primary" ng-click="createMovie()">Create</button>
+	</form>
+</div>

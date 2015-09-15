@@ -8,8 +8,22 @@ html, body, #view, .container {
 	padding-top: 50px;
 }
 
-.movie-thumbnail {
+.movie {
+	position: relative;
+	display: inline-block;
+	float: left;
 	padding: 0;
-	width: 20vw;
-	height: 20vw;
+	margin: 1em;
+	width: 200px;
+	height: 200px;
+	.movie-image {
+		width: 100%;
+		height: 100%;
+	}
+	.movie-description {
+		position: absolute;
+		bottom: 0;
+		padding: 0.5em;
+		color: white;
+	}
 }

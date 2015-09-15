@@ -12,6 +12,9 @@ app.config(['$routeProvider', function ($routeProvider) {
   .when('/home', {
     templateUrl: 'views/home.html',
   })
+  .when('/new-movie', {
+    templateUrl: 'views/new-movie.html',
+  })
   .otherwise({
     redirectTo: '/home'
   });
